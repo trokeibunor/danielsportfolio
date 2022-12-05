@@ -1,9 +1,15 @@
 <script setup>
-import TheWelcome from "../components/TheWelcome.vue";
+import NavBar from "../components/NavbarComponent.vue";
+import HeroComponent from "../components/HeroComponent.vue";
+import TestimonialComponent from "../components/TestimonialComponent.vue";
+import AboutComponent from "../components/AboutComponent.vue";
 </script>
 
 <template>
+  <NavBar />
   <main>
-    <TheWelcome />
+    <HeroComponent />
+    <TestimonialComponent />
+    <AboutComponent />
   </main>
 </template>
