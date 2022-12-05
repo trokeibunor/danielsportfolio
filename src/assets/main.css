@@ -1,0 +1,7 @@
+@import "./base.css";
+body {
+  background: #282c33;
+}
+#app {
+  font-family: "Lato", sans-serif;
+}
