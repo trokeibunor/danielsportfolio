@@ -62,15 +62,5 @@ section.about {
       }
     }
   }
-  .about_content::before {
-    content: "";
-    width: 50%;
-    height: 100%;
-    position: absolute;
-    z-index: -1;
-    top: 3.5%;
-    left: -30%;
-    background-color: rgb(102, 101, 101);
-  }
 }
 </style>
