@@ -186,6 +186,9 @@
               color: #fff;
               border: 1px solid #fff;
               font-weight: 600;
+              img {
+                display: none;
+              }
             }
           }
         }

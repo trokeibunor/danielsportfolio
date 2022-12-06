@@ -8,6 +8,7 @@ import ExperienceComponent from "../components/ExperienceComponent.vue";
 import PortfolioComponent from "../components/PortfolioComponent.vue";
 import ToolsComponent from "../components/ToolsComponent.vue";
 import ContactComponent from "../components/ContactComponent.vue";
+import FooterComponent from "../components/FooterComponent.vue";
 </script>
 
 <template>
@@ -22,4 +23,5 @@ import ContactComponent from "../components/ContactComponent.vue";
     <ToolsComponent />
     <ContactComponent />
   </main>
+  <FooterComponent />
 </template>

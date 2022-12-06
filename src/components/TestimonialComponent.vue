@@ -27,7 +27,7 @@
     </div>
   </section>
 </template>
-<style lang="scss">
+<style lang="scss" scoped>
 .testimonial {
   min-height: 50vh;
   width: 100%;
