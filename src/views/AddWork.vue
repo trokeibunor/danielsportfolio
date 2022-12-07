@@ -4,13 +4,17 @@
     <h3>Add Work</h3>
     <form action="">
       <input type="text" name="name" id="" placeholder="Name*" required />
-      <input type="text" name="" id="" placeholder="Title*" required />
+      <input type="text" name="" id="" placeholder="Link to work*" required />
       <select name="" id="" required>
         <option value="">Please Select Category</option>
         <option value=""></option>
       </select>
       <input type="file" />
-      <textarea name="testimonial" placeholder="Testimonial"></textarea>
+      <textarea
+        name="testimonial"
+        placeholder="Short Description*"
+        maxlength="200"
+      ></textarea>
       <button type="submit">
         Submit <img src="../assets/submit_icon.svg" alt="" />
       </button>
@@ -57,6 +61,17 @@ import FooterComponentVue from "../components/FooterComponent.vue";
     select:focus {
       color: #00adb5;
       border-bottom: 1px solid #00adb5;
+    }
+    input[type="file" i]::file-selector-button {
+      background-color: #00adb5;
+      outline: none;
+      border: none;
+      padding: 4px 8px;
+      color: #fff;
+      font-weight: 600;
+      width: fit-content;
+      border-radius: 4px;
+      cursor: pointer;
     }
     button {
       background-color: #00adb5;
