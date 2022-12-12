@@ -3,8 +3,9 @@
     <div class="contactTopper">
       <p class="header">Let's talk about your next project</p>
       <p class="write">
-        There are many variations of passages of Lorem Ipsu available. but the
-        majority have suffered alte.
+        I'm currently on a mission to help SMEs, Brands and individuals grow. I
+        write and I create Do you need any of my services? kindly drop your
+        details
       </p>
     </div>
     <div class="contactContent">
@@ -87,6 +88,20 @@
     .header {
       font-size: 32px;
       font-weight: bold;
+    }
+    .write {
+      width: 70%;
+      margin: 0 auto;
+    }
+    @media screen and (max-width: 768px) {
+      .header {
+        font-size: 24px;
+        margin-bottom: 1.5rem;
+      }
+      .write {
+        width: 90%;
+        text-align: left;
+      }
     }
   }
   .contactContent {
@@ -178,6 +193,24 @@
                 width: 16px;
                 height: 16px;
                 margin-left: 4px;
+              }
+            }
+          }
+        }
+      }
+    }
+    @media screen and (max-width: 786px) {
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      .contactForm {
+        .cfContent {
+          display: block;
+          .form-content {
+            form {
+              margin: 0 auto;
+              button {
+                margin-bottom: 1rem;
               }
             }
           }

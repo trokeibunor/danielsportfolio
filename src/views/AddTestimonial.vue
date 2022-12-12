@@ -3,10 +3,28 @@
   <div class="passwordBlock"></div>
   <div class="testContainer">
     <h3>Add Testimonial</h3>
-    <form action="#">
-      <input type="text" name="name" id="" placeholder="Name*" required />
-      <input type="email" name="" id="" placeholder="Email*" required />
-      <textarea name="testimonial" placeholder="Testimonial"></textarea>
+    <form :on-submit="addTestimonial">
+      <input
+        type="text"
+        name="name"
+        v-modal="name"
+        id=""
+        placeholder="Name*"
+        required
+      />
+      <input
+        type="email"
+        name=""
+        id=""
+        v-model="email"
+        placeholder="Email*"
+        required
+      />
+      <textarea
+        name="testimonial"
+        v-model="testimonial"
+        placeholder="Testimonial"
+      ></textarea>
       <button type="submit">
         Submit <img src="../assets/submit_icon.svg" alt="" />
       </button>
@@ -16,8 +34,26 @@
 </template>
 
 <script setup>
+import { useSiteState } from "@/stores/siteState";
 import NavbarComponentVue from "../components/NavbarComponent.vue";
 import FooterComponentVue from "../components/FooterComponent.vue";
+import { reactive } from "vue";
+const siteState = useSiteState();
+function addTestimonial() {
+  siteState.addTestimonial(user);
+  user.name = "";
+  user.email = "";
+  user.position = "";
+  user.workPlace = "";
+  user.testimonial = "";
+}
+const user = reactive({
+  name: "",
+  email: "",
+  position: "",
+  workPlace: "",
+  testimonial: "",
+});
 </script>
 
 <style lang="scss" scoped>

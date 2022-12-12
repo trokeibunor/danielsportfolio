@@ -50,6 +50,14 @@ footer {
         }
       }
     }
+    @media screen and (max-width: 768px) {
+      .tfCon {
+        flex-direction: column;
+        .logo {
+          font-size: 32px;
+        }
+      }
+    }
   }
 }
 </style>

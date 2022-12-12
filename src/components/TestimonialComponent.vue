@@ -109,5 +109,19 @@
       }
     }
   }
+  @media screen and (max-width: 768px) {
+    min-height: auto;
+    .testimonial_content {
+      display: block;
+      // margin: 1rem 0px;
+      .social_div {
+        display: none;
+      }
+      .testimonials_row {
+        grid-template-columns: 2% 1fr 2%;
+        margin: 2.5rem 0px;
+      }
+    }
+  }
 }
 </style>

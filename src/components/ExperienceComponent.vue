@@ -5,11 +5,7 @@
         <div class="lscontent">
           <div>
             <h3>My Work Experience</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur. Amet mattis cras at
-              scelerisque sed magna. Scelerisque hendrerit id ut tempus
-              facilisis nec faucibus
-            </p>
+            <p>I've worked</p>
           </div>
           <img src="../assets/experience_img.png" alt="" />
         </div>
@@ -98,6 +94,34 @@
         .ebTitle {
           font-size: 24px;
           font-weight: 600;
+        }
+      }
+    }
+    @media screen and (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      width: 75%;
+      .leftSide {
+        border: none;
+        .lscontent {
+          width: 100%;
+          img {
+            width: 70%;
+            margin: 0 auto;
+          }
+          h3 {
+            font-size: 24px;
+            font-weight: 600;
+          }
+          align-items: flex-start;
+        }
+      }
+      .rightSide {
+        border: none;
+        align-items: flex-start;
+        margin-top: 2rem;
+        .experienceBox {
+          width: 100%;
         }
       }
     }

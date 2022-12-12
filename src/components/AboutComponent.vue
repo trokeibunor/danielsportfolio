@@ -6,18 +6,34 @@
       <div class="text-section">
         <h3>About me</h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur. Amet mattis cras at
-          scelerisque sed magna. Scelerisque hendrerit id ut tempus facilisis
-          nec faucibus elementum. Aliquam orci semper diam blandit morbi eu
-          mattis fermentum. Habitant augue imperdiet velit lorem consequat
-          feugiat. Pharetra ipsum nibh id risus sapien tortor massa sed sed.
-          Sodales sit integer nulla a. Curabitur at magnis diam eget proin. Eu
-          in proin amet amet sodales arcu suspendisse arcu eu. Leo augue id
-          dignissim commodo duis. Elementum praesent laoreet mauris arcu
-          molestie quam tempus egestas v
+          A creative with over 5 years experience with a proven track record of
+          creating creative contents to drive growth. Daniel, who is focused on
+          enabling businesses in Africa grow worked with OPERA and helped over
+          300 businesses to produce inspiring and memorable experiences through
+          online marketing/content marketing. Talk about making memories; he
+          created an advert script that was aired on CNN AFRICA and CHANNELS TV.
+          He has been featured on some notable online magazines like RefinedNG
+          as the personality of the week in December 2020 and on Business Elite
+          Africa as the Social Media Champ in August 2021. With this growing
+          love in building brands Daniel has built a niche in fintech, Edtech,
+          advertising, media, Real estate etc. He has also made it his mission
+          to develop and execute creative-digital ways to drive growth and
+          profits to brands.
         </p>
         <button><img src="../assets/Download.svg" alt="" /> Talk to Me</button>
       </div>
+    </div>
+    <div class="framer">
+      <p>I'm excellent at creating content, have a look</p>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/DLZhNWgFjHk"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
     </div>
   </section>
 </template>
@@ -60,6 +76,34 @@ section.about {
         border: 2px solid #fff;
         color: #00adb5;
       }
+    }
+  }
+  .framer {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  @media screen and (max-width: 768px) {
+    .about_content {
+      width: 85%;
+      display: flex;
+      flex-direction: column;
+    }
+    .framer {
+      position: relative;
+      width: 85%;
+      padding-bottom: 56.5%;
+      margin: 2rem auto;
+    }
+    .framer iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
     }
   }
 }

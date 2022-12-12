@@ -82,5 +82,25 @@
       }
     }
   }
+  @media screen and (max-width: 1084px) {
+    // tablet
+  }
+  @media screen and (max-width: 768px) {
+    .hero_content {
+      display: flex;
+      flex-direction: column-reverse;
+      .left-side {
+        .text_section {
+          margin-top: 1rem;
+          p {
+            width: 100%;
+          }
+        }
+        button {
+          margin-bottom: 2rem;
+        }
+      }
+    }
+  }
 }
 </style>

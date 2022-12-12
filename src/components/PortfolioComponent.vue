@@ -6,6 +6,12 @@
         <p class="categoryBox">Web Content</p>
         <p class="categoryBox">Web Content</p>
         <p class="categoryBox">Web Content</p>
+        <p class="categoryBox">Web Content</p>
+        <p class="categoryBox">Web Content</p>
+        <p class="categoryBox">Web Content</p>
+        <p class="categoryBox">Web Content</p>
+        <p class="categoryBox">Web Content</p>
+        <p class="categoryBox">Web Content</p>
       </div>
       <div class="worksHolder">
         <div class="workGrid">
@@ -191,6 +197,28 @@
               }
             }
           }
+        }
+      }
+    }
+    @media screen and (max-width: 768px) {
+      h3.header {
+        font-size: 24px;
+      }
+      border-radius: 8px;
+      width: 85%;
+      .portfolioTogglerow {
+        display: relative;
+        overflow: scroll;
+        .categoryBox {
+          width: auto;
+        }
+      }
+
+      .worksHolder {
+        .workGrid {
+          width: 85%;
+          display: flex;
+          flex-direction: column;
         }
       }
     }

@@ -9,6 +9,9 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
   },
   "dependencies": {
+    "emailjs": "^4.0.1",
+    "emailjs-com": "^3.2.0",
+    "firebase": "^9.14.0",
     "pinia": "^2.0.26",
     "vue": "^3.2.45",
     "vue-router": "^4.1.6"

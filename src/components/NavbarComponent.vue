@@ -70,6 +70,14 @@ nav {
         margin: 0px 8px;
       }
     }
+    @media screen and (max-width: 1024px) {
+      // tablet
+    }
+    @media screen and (max-width: 768px) {
+      .nav-menu {
+        display: none;
+      }
+    }
   }
 }
 </style>

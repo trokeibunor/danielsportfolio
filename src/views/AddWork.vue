@@ -2,18 +2,37 @@
   <NavbarComponentVue />
   <div class="workContainer">
     <h3>Add Work</h3>
-    <form action="">
-      <input type="text" name="name" id="" placeholder="Name*" required />
-      <input type="text" name="" id="" placeholder="Link to work*" required />
-      <select name="" id="" required>
+    <form @submit.prevent="submitGig">
+      <input
+        type="text"
+        name="name"
+        id=""
+        v-model="Gig.name"
+        placeholder="Name*"
+        required
+      />
+      <input
+        type="text"
+        name=""
+        id=""
+        v-model="Gig.link"
+        placeholder="Link to work*"
+        required
+      />
+      <select name="" id="" v-model="Gig.category" required>
         <option value="">Please Select Category</option>
-        <option value=""></option>
+        <option value="test">Test</option>
       </select>
-      <input type="file" />
+      <input
+        type="file"
+        @change="handleproImgUpload"
+        :state="Boolean(projectImg)"
+      />
       <textarea
         name="testimonial"
         placeholder="Short Description*"
         maxlength="200"
+        v-model="Gig.shortDesc"
       ></textarea>
       <button type="submit">
         Submit <img src="../assets/submit_icon.svg" alt="" />
@@ -26,6 +45,37 @@
 <script setup>
 import NavbarComponentVue from "../components/NavbarComponent.vue";
 import FooterComponentVue from "../components/FooterComponent.vue";
+import { useSiteState } from "@/stores/siteState";
+import { ref, reactive } from "vue";
+const Gig = reactive({
+  name: "",
+  link: "",
+  category: "",
+  img: "",
+  shortDesc: "",
+});
+const siteState = useSiteState();
+const projectImg = ref(false);
+// handle image upload
+function handleproImgUpload(e) {
+  // const self = this;
+  const file = e.target.files[0];
+  const reader = new FileReader();
+  reader.readAsArrayBuffer(file);
+  reader.onload = function () {
+    Gig.img = reader.result;
+    console.log(reader.result);
+    console.log(Gig.img);
+  };
+}
+function submitGig() {
+  siteState.addWorks(Gig);
+  Gig.img = "";
+  Gig.name = "";
+  Gig.gitLink = "";
+  Gig.shortDesc = "";
+  Gig.link = "";
+}
 </script>
 
 <style lang="scss" scoped>
