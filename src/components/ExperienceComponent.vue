@@ -5,46 +5,82 @@
         <div class="lscontent">
           <div>
             <h3>My Work Experience</h3>
-            <p>I've worked</p>
+            <p>Hi there, here is a Sneak Peek into my work experience.</p>
           </div>
           <img src="../assets/experience_img.png" alt="" />
         </div>
       </div>
       <div class="rightSide">
         <div class="experienceBox">
-          <p class="ebTitle">SCARIPAY (Madagascar)</p>
-          <p class="ebRole">Digital Content Manager</p>
-          <p class="ebDuration">September 2021 - present</p>
+          <p class="ebTitle">Grillado</p>
+          <p class="ebRole">
+            I managed their social media pages, created social media copies and
+            caption.
+          </p>
         </div>
         <div class="experienceBox">
-          <p class="ebTitle">SAGEMEDIA_TECH</p>
-          <p class="ebRole">Creative Manager</p>
-          <p class="ebDuration">October 2020 - September 2021</p>
+          <p class="ebTitle">GOTHRIDER</p>
+          <p class="ebRole">
+            Created great social media copies that resonates well to the brand
+            and also weaved out captions that resulted into CTA.
+          </p>
         </div>
         <div class="experienceBox">
-          <p class="ebTitle">GITALHUB DIGITAL SERVICE</p>
-          <p class="ebRole">Facebook specialist/ Content Writer</p>
-          <p class="ebDuration">April 2020 - September 2021</p>
+          <p class="ebTitle">APRICOAT</p>
+          <p class="ebRole">
+            Grew it followers online, worked alongside influencers to create UGC
+            contents and created great Social copy.
+          </p>
+        </div>
+        <div class="experienceBox">
+          <p class="ebTitle">HOSKI MEDIA</p>
+          <p class="ebRole">
+            Created content for her website and also worked with few of her
+            client.
+          </p>
+        </div>
+        <div class="experienceBox">
+          <p class="ebTitle">SOUNDS GOOD</p>
+          <p class="ebRole">
+            Generated more than 1,000 influencers monthly for UGC Campaigns.
+            They were both paid/Product based influencers.
+          </p>
+        </div>
+        <div class="experienceBox">
+          <p class="ebTitle">SM MARKETING</p>
+          <p class="ebRole">
+            I managed/Grew a client page on Instagram & Facebook from 0
+            followers -18,000 followers within the space of a year.
+          </p>
+        </div>
+        <div class="experienceBox">
+          <p class="ebTitle">SCARIPAY</p>
+          <p class="ebRole">
+            I Created an easy-Flow UX copy for their mobile Application and
+            website. I also managed their social pages.
+          </p>
         </div>
         <div class="experienceBox">
           <p class="ebTitle">OPERA</p>
-          <p class="ebRole">Digital Content Manager</p>
-          <p class="ebDuration">Noverber 2019 - October 2020</p>
+          <p class="ebRole">
+            Managed close to 200 businesses and I also monitored their ads
+            campaigns on opera’s platform (Opera Mini)
+          </p>
         </div>
         <div class="experienceBox">
-          <p class="ebTitle">FUMBA RESOURCES LIMITED</p>
-          <p class="ebRole">Customer Care Manager</p>
-          <p class="ebDuration">April 2018 - October 2019</p>
+          <p class="ebTitle">SAGE MEDIA TECH</p>
+          <p class="ebRole">
+            I created an advert script that was aired on CNNAFRICA and I also
+            weaved out content for billboards, social banners, Facebook copies
+            and websites.
+          </p>
         </div>
         <div class="experienceBox">
-          <p class="ebTitle">PLATEAU RADIO TELEVISION CORPORATION</p>
-          <p class="ebRole">Journalist</p>
-          <p class="ebDuration">May 2017 - April 2018</p>
-        </div>
-        <div class="experienceBox">
-          <p class="ebTitle">BACKGROUND CHECK INTERNATIONAL</p>
-          <p class="ebRole">Operations Specialist (Private Investigator)</p>
-          <p class="ebDuration">June 2015 - January 2016</p>
+          <p class="ebTitle">AK MEDIA CONCEPTS</p>
+          <p class="ebRole">
+            Managed their social media pages and also created successful
+            Facebook ads campaigns.
+          </p>
         </div>
       </div>
     </div>

@@ -6,19 +6,26 @@
       <div class="text-section">
         <h3>About me</h3>
         <p>
-          A creative with over 5 years experience with a proven track record of
-          creating creative contents to drive growth. Daniel, who is focused on
-          enabling businesses in Africa grow worked with OPERA and helped over
-          300 businesses to produce inspiring and memorable experiences through
-          online marketing/content marketing. Talk about making memories; he
-          created an advert script that was aired on CNN AFRICA and CHANNELS TV.
-          He has been featured on some notable online magazines like RefinedNG
-          as the personality of the week in December 2020 and on Business Elite
-          Africa as the Social Media Champ in August 2021. With this growing
-          love in building brands Daniel has built a niche in fintech, Edtech,
-          advertising, media, Real estate etc. He has also made it his mission
-          to develop and execute creative-digital ways to drive growth and
-          profits to brands.
+          About Daniel I am a creative with over 5 years experience with a
+          proven track record of creating digital strategies to drive growth.
+          <br />
+          <br />
+          For the love I have for businesses, I worked for OPERA and helped over
+          200 businesses to produce inspiring and memorable experiences through
+          online marketing.
+          <br />
+          <br />
+          Talk about making memories; I created an advert script that was aired
+          on CNN AFRICA and CHANNELS TV. I have been featured on some notable
+          online magazines like RefinedNG as the personality of the week in
+          December 2020 and on Business Elite Africa as the Social Media Champ
+          in August 2021.
+          <br />
+          <br />
+          With this growing love in building businesses, I have worked with
+          brands in Fintech, Edtech, Advertising, Media, Real-Estate and many
+          more. My mission is to develop and execute creative-digital ways for
+          brands.
         </p>
         <button><img src="../assets/Download.svg" alt="" /> Talk to Me</button>
       </div>
