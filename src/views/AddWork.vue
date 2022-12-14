@@ -20,8 +20,11 @@
         required
       />
       <select name="" id="" v-model="Gig.category" required>
-        <option value="">Please Select Category</option>
-        <option value="test">Test</option>
+        <option value="" disabled selected hidden>
+          Please Select Category
+        </option>
+        <option value="smManagement">Social Media Management</option>
+        <option value="uiwriting">UI writing</option>
       </select>
       <input
         type="file"

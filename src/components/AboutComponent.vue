@@ -6,8 +6,8 @@
       <div class="text-section">
         <h3>About me</h3>
         <p>
-          About Daniel I am a creative with over 5 years experience with a
-          proven track record of creating digital strategies to drive growth.
+          I am a creative with over 5 years experience with a proven track
+          record of creating digital strategies to drive growth.
           <br />
           <br />
           For the love I have for businesses, I worked for OPERA and helped over

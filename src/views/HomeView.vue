@@ -14,14 +14,14 @@ import FooterComponent from "../components/FooterComponent.vue";
 <template>
   <NavBar />
   <main>
-    <HeroComponent />
+    <HeroComponent id="top" />
     <TestimonialComponent />
-    <AboutComponent />
+    <AboutComponent id="about" />
     <WhatIDoComponent />
     <ExperienceComponent />
-    <PortfolioComponent />
+    <PortfolioComponent id="work" />
     <ToolsComponent />
-    <ContactComponent />
+    <ContactComponent id="contact" />
   </main>
   <FooterComponent />
 </template>

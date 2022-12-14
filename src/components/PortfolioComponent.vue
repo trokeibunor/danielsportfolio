@@ -3,15 +3,8 @@
     <div class="portfolioContent">
       <h3 class="header">Portfolio</h3>
       <div class="portfolioTogglerow">
-        <p class="categoryBox">Web Content</p>
-        <p class="categoryBox">Web Content</p>
-        <p class="categoryBox">Web Content</p>
-        <p class="categoryBox">Web Content</p>
-        <p class="categoryBox">Web Content</p>
-        <p class="categoryBox">Web Content</p>
-        <p class="categoryBox">Web Content</p>
-        <p class="categoryBox">Web Content</p>
-        <p class="categoryBox">Web Content</p>
+        <p class="categoryBox">Social Media Management</p>
+        <p class="categoryBox">UI Writing</p>
       </div>
       <div class="worksHolder">
         <div class="workGrid">

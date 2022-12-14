@@ -12,63 +12,63 @@
       </div>
       <div class="rightSide">
         <div class="experienceBox">
-          <p class="ebTitle">Grillado</p>
+          <p class="ebTitle">GRILLADO (CANADA)</p>
           <p class="ebRole">
             I managed their social media pages, created social media copies and
             caption.
           </p>
         </div>
         <div class="experienceBox">
-          <p class="ebTitle">GOTHRIDER</p>
+          <p class="ebTitle">GOTHRIDER (CANADA)</p>
           <p class="ebRole">
             Created great social media copies that resonates well to the brand
             and also weaved out captions that resulted into CTA.
           </p>
         </div>
         <div class="experienceBox">
-          <p class="ebTitle">APRICOAT</p>
+          <p class="ebTitle">APRICOAT (USA)</p>
           <p class="ebRole">
             Grew it followers online, worked alongside influencers to create UGC
             contents and created great Social copy.
           </p>
         </div>
         <div class="experienceBox">
-          <p class="ebTitle">HOSKI MEDIA</p>
+          <p class="ebTitle">HOSKI MEDIA(CANADA)</p>
           <p class="ebRole">
             Created content for her website and also worked with few of her
             client.
           </p>
         </div>
         <div class="experienceBox">
-          <p class="ebTitle">SOUNDS GOOD</p>
+          <p class="ebTitle">SOUNDS GOOD(CANADA)</p>
           <p class="ebRole">
             Generated more than 1,000 influencers monthly for UGC Campaigns.
             They were both paid/Product based influencers.
           </p>
         </div>
         <div class="experienceBox">
-          <p class="ebTitle">SM MARKETING</p>
+          <p class="ebTitle">SM MARKETING(SOUTH AFRICA)</p>
           <p class="ebRole">
             I managed/Grew a client page on Instagram & Facebook from 0
             followers -18,000 followers within the space of a year.
           </p>
         </div>
         <div class="experienceBox">
-          <p class="ebTitle">SCARIPAY</p>
+          <p class="ebTitle">SCARIPAY(MADAGASCAR)</p>
           <p class="ebRole">
             I Created an easy-Flow UX copy for their mobile Application and
             website. I also managed their social pages.
           </p>
         </div>
         <div class="experienceBox">
-          <p class="ebTitle">OPERA</p>
+          <p class="ebTitle">OPERA(NIGERIA)</p>
           <p class="ebRole">
             Managed close to 200 businesses and I also monitored their ads
             campaigns on opera’s platform (Opera Mini)
           </p>
         </div>
         <div class="experienceBox">
-          <p class="ebTitle">SAGE MEDIA TECH</p>
+          <p class="ebTitle">SAGE MEDIA TECH(NIGERIA)</p>
           <p class="ebRole">
             I created an advert script that was aired on CNNAFRICA and I also
             weaved out content for billboards, social banners, Facebook copies
@@ -76,7 +76,7 @@
           </p>
         </div>
         <div class="experienceBox">
-          <p class="ebTitle">AK MEDIA CONCEPTS</p>
+          <p class="ebTitle">AK MEDIA CONCEPTS(NIGERIA)</p>
           <p class="ebRole">
             Managed their social media pages and also created successful
             Facebook ads campaigns.

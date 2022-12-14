@@ -3,9 +3,8 @@
     <div class="contactTopper">
       <p class="header">Let's talk about your next project</p>
       <p class="write">
-        I'm currently on a mission to help SMEs, Brands and individuals grow. I
-        write and I create Do you need any of my services? kindly drop your
-        details
+        I’m currently on a mission to help SME’s, Big Brands and Individuals
+        grow. Do you need any of my services? Kindly fill the form below.
       </p>
     </div>
     <div class="contactContent">
@@ -18,21 +17,23 @@
                   <img src="../assets/location_pin.svg" id="adImg" alt="" />
                   <div class="adCon">
                     <p class="adTitle">Address</p>
-                    <p class="adDesc">Remote/Onsite</p>
+                    <p class="adDesc">Remote/Hybrid</p>
                   </div>
                 </div>
                 <div class="adBox">
                   <img src="../assets/mail_icon.svg" id="adImg" alt="" />
                   <div class="adCon">
                     <p class="adTitle">My Email:</p>
-                    <a href="" class="adDesc">danielA@gmail.com</a>
+                    <a href="" class="adDesc">daikhomogbe@gmail.Com</a>
                   </div>
                 </div>
                 <div class="adBox">
                   <img src="../assets/call_icon.svg" id="adImg" alt="" />
                   <div class="adCon">
-                    <p class="adTitle">Call Me:</p>
-                    <a href="tel+:" class="adDesc">+234 9015379412</a>
+                    <p class="adTitle">Call/WhatsApp me:</p>
+                    <a href="tel+:+2347063591827" class="adDesc"
+                      >+234 7063591827</a
+                    >
                   </div>
                 </div>
               </div>

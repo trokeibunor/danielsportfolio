@@ -5,7 +5,7 @@
       <div class="left-side">
         <div class="text_section">
           <div class="hello_badge">&#128075; Hello, I'm</div>
-          <h1>Daniel <br />Aikhomogbe</h1>
+          <h1>Daniel <br />Your next digital media manager</h1>
           <p>
             Daniel is a creative with over 6 years experience with a proven
             track record of creating contents to drive growth.

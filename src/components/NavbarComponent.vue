@@ -6,7 +6,7 @@ const dropDown = ref(false);
 <template>
   <nav>
     <div class="navContent">
-      <div class="logo">
+      <a href="/#top" class="logo">
         <h1>DANIEL A.</h1>
         <!-- div group design -->
         <div class="logoGroup">
@@ -14,11 +14,11 @@ const dropDown = ref(false);
           <div id="logoTwo"></div>
           <div id="logoThree"></div>
         </div>
-      </div>
+      </a>
       <div class="nav-menu">
-        <a href="#">Works</a>
-        <a href="#">Contact</a>
-        <a href="#">About Daniel</a>
+        <a href="/#work">Works</a>
+        <a href="/#contact">Contact</a>
+        <a href="/#about">About Daniel</a>
       </div>
       <div class="mobileToggler">
         <img
@@ -76,6 +76,8 @@ nav {
     .logo {
       display: flex;
       flex-direction: row;
+      text-decoration: none;
+      color: #fff;
       .logoGroup {
         display: flex;
         flex-direction: row;

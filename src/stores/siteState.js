@@ -1,12 +1,14 @@
 import { defineStore } from "pinia";
 import { db } from "@/db";
+import { useToast } from "vue-toastification";
+import "vue-toastification/dist/index.css";
 import {
   setDoc,
   doc,
-  //   getDocs,
-  //   collection,
+  getDocs,
+  collection,
   serverTimestamp,
-  //   addDoc,
+  // addDoc,
 } from "firebase/firestore";
 import { getStorage, ref, uploadBytes, getDownloadURL } from "firebase/storage";
 // import emailjs from "emailjs-com";
@@ -18,24 +20,40 @@ export const useSiteState = defineStore({
     works: [],
   }),
   actions: {
+    async getTesimonials() {
+      const querySnapshot = await getDocs(collection(db, "testimonials"));
+      this.testimonials = [];
+      console.log("from testimonials");
+      querySnapshot.forEach((doc) => {
+        const dataObject = doc.data();
+        console.log(dataObject);
+        // Actions can mutate state in pinia
+        // mutate projects
+        this.testimonials.push({ ...dataObject });
+        console.log(this.testimonials);
+      });
+    },
     // add Testimonials
     async addTestimonial({ name, email, testimonial }) {
       this.isProcessing = true;
       try {
         await setDoc(doc(db, "testimonials", name), {
-          Name: name,
-          email: email,
+          name: name,
+          location: email,
           testimonial: testimonial,
-          createdAt: serverTimestamp(),
         });
         this.isProcessing = false;
         this.emailSent = true;
+        const toast = useToast();
+        toast("Testimonial Added");
       } catch (error) {
         this.isProcessing = false;
         this.emailNotSent = true;
         if (error) {
           console.log(error);
         }
+        const toast = useToast();
+        toast("Testimonial Not Added");
       }
     },
     async addWorks({ name, link, category, img, shortDesc }) {

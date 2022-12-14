@@ -3,26 +3,26 @@
   <div class="passwordBlock"></div>
   <div class="testContainer">
     <h3>Add Testimonial</h3>
-    <form :on-submit="addTestimonial">
+    <form @submit.prevent="addTestimonial">
       <input
         type="text"
         name="name"
-        v-modal="name"
+        v-model="user.name"
         id=""
         placeholder="Name*"
         required
       />
       <input
-        type="email"
+        type="text"
         name=""
         id=""
-        v-model="email"
-        placeholder="Email*"
+        v-model="user.email"
+        placeholder="Location*"
         required
       />
       <textarea
         name="testimonial"
-        v-model="testimonial"
+        v-model="user.testimonial"
         placeholder="Testimonial"
       ></textarea>
       <button type="submit">
@@ -40,18 +40,15 @@ import FooterComponentVue from "../components/FooterComponent.vue";
 import { reactive } from "vue";
 const siteState = useSiteState();
 function addTestimonial() {
+  console.log(user);
   siteState.addTestimonial(user);
   user.name = "";
   user.email = "";
-  user.position = "";
-  user.workPlace = "";
   user.testimonial = "";
 }
 const user = reactive({
   name: "",
   email: "",
-  position: "",
-  workPlace: "",
   testimonial: "",
 });
 </script>
