@@ -8,9 +8,19 @@ const testCounter = ref(0);
       <div class="social_div">
         <div id="line"></div>
         <div class="social_links">
-          <a href="#"><img src="../assets/github_icon.svg" alt="" /></a>
-          <a href="#"><img src="../assets/dribble_icon.svg" alt="" /></a>
-          <a href="#"><img src="../assets/figma_icon.svg" alt="" /></a>
+          <a
+            href="https://www.linkedin.com/in/daniel-aikhomogbe-bsc-mmba-ch-dmp-031385162/"
+            target="_blank"
+            ><img src="../assets/Facebook.svg" alt=""
+          /></a>
+          <a href="https://www.instagram.com/danielaikhomogbe/" target="_blank"
+            ><img src="../assets/Instagram.svg" alt=""
+          /></a>
+          <a
+            href="https://www.linkedin.com/in/daniel-aikhomogbe-bsc-mmba-ch-dmp-031385162/"
+            target="_blank"
+            ><img src="../assets/LinkedIn.svg" alt=""
+          /></a>
         </div>
       </div>
       <div class="testimonials_row">

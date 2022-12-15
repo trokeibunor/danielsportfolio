@@ -38,9 +38,21 @@
                 </div>
               </div>
               <div class="social_links">
-                <a href="#"><img src="../assets/github_icon.svg" alt="" /></a>
-                <a href="#"><img src="../assets/dribble_icon.svg" alt="" /></a>
-                <a href="#"><img src="../assets/figma_icon.svg" alt="" /></a>
+                <a
+                  href="https://web.facebook.com/profile.php?id=100002798189182"
+                  target="_blank"
+                  ><img src="../assets/Facebook.svg" alt=""
+                /></a>
+                <a
+                  href="https://www.instagram.com/danielaikhomogbe/"
+                  target="_blank"
+                  ><img src="../assets/Instagram.svg" alt=""
+                /></a>
+                <a
+                  href="https://www.linkedin.com/in/daniel-aikhomogbe-bsc-mmba-ch-dmp-031385162/"
+                  target="_blank"
+                  ><img src="../assets/LinkedIn.svg" alt=""
+                /></a>
               </div>
             </div>
           </div>
