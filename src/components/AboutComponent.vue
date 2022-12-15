@@ -35,8 +35,10 @@
         </a>
       </div>
     </div>
+    <p id="framerHeader">
+      Here’s a TV advert script i wrote for Nicolivia Clothings
+    </p>
     <div class="framer">
-      <p>I'm excellent at creating content, have a look</p>
       <iframe
         width="560"
         height="315"
@@ -91,6 +93,10 @@ section.about {
         color: #00adb5;
       }
     }
+  }
+  #framerHeader {
+    text-align: center;
+    font-weight: 600;
   }
   .framer {
     width: 70%;

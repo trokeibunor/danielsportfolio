@@ -5,11 +5,14 @@
         <div class="lscontent">
           <div>
             <h3>My Career Highlights</h3>
-            <p>Hi there, here is a Sneak Peek into my work experience.</p>
+            <p>Hi there, here is a Sneak Peek into my career path.</p>
           </div>
           <img src="../assets/experience_img.png" alt="" />
           <div class="experienceBox">
-            <p class="ebTitle">Wesly University</p>
+            <p class="ebTitleTop">Education</p>
+          </div>
+          <div class="experienceBox">
+            <p class="ebTitle">Wesley University</p>
             <p class="ebRole">B.sc Mass Communication</p>
           </div>
           <div class="experienceBox">
@@ -37,6 +40,9 @@
         </div>
       </div>
       <div class="rightSide">
+        <div class="experienceBox">
+          <p class="ebTitleTop">Work experience</p>
+        </div>
         <div class="experienceBox">
           <p class="ebTitle">GRILLADO (Canada)</p>
           <p class="ebRole">
@@ -146,6 +152,10 @@
             font-size: 24px;
             font-weight: 600;
           }
+          .ebTitleTop {
+            font-size: 32px;
+            font-weight: 600;
+          }
         }
         img {
           width: 70%;
@@ -166,6 +176,10 @@
         }
         .ebTitle {
           font-size: 24px;
+          font-weight: 600;
+        }
+        .ebTitleTop {
+          font-size: 32px;
           font-weight: 600;
         }
       }
