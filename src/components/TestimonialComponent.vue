@@ -1,4 +1,7 @@
-<script setup></script>
+<script setup>
+import { ref } from "vue";
+const testCounter = ref(0);
+</script>
 <template>
   <section class="testimonial">
     <div class="testimonial_content">
@@ -11,16 +14,82 @@
         </div>
       </div>
       <div class="testimonials_row">
-        <div class="button_left">
+        <div
+          class="button_left"
+          @click="
+            testCounter == 0
+              ? (testCounter = 4)
+              : (testCounter = testCounter - 1)
+          "
+        >
           <img src="../assets/right_circle.svg" alt="" />
         </div>
-        <div class="testicon">
+        <!-- I'll loop through this -->
+        <div class="testicon" v-if="testCounter == 0">
           <div class="testimonial_talk">
-            <p>Working with daniel has been an awesome experience.</p>
+            <p>
+              The first time I received Daniel’s files and we had our first
+              discussion I knew he was the perfect candidate to head my project.
+              It has been an awesome experience ever since
+            </p>
           </div>
-          <p class="testimonial_author">Emmanuel Okeibunor</p>
+          <p class="testimonial_author">Joseph Masondo (South Africa)</p>
         </div>
-        <div class="button_right">
+        <div class="testicon" v-if="testCounter == 1">
+          <div class="testimonial_talk">
+            <p>
+              I highly recommend Daniel as a digital marketing expertise and
+              would love to work together again.” “Daniel is amazing at his job!
+              He knows his way around people, he is good with the clients, does
+              whatever it takes to help colleagues and gets things done. He
+              makes sure that everyone is on the same page and focused on the
+              main goal. I’m sure he will be a great asset to any team he joins.
+            </p>
+          </div>
+          <p class="testimonial_author">Bamisile Ayibiowu (Nigeria)</p>
+        </div>
+        <div class="testicon" v-if="testCounter == 2">
+          <div class="testimonial_talk">
+            <p>
+              Daniel is an amazing writer and an even better story teller. I've
+              worked with him on several projects and he is very easy to work
+              with. Overall, he is a good team player, he's good at what he does
+              and I'll recommend him anytime.
+            </p>
+          </div>
+          <p class="testimonial_author">Akinlude Damilola (Nigeria)</p>
+        </div>
+        <div class="testicon" v-if="testCounter == 3">
+          <div class="testimonial_talk">
+            <p>
+              Daniel is a talented writer, story teller and a skilled digital
+              marketer. working on the same team with him has been such an
+              honour. If you are looking for any position related to his
+              portfolio, feel free to reach to him. I recommend his services.
+            </p>
+          </div>
+          <p class="testimonial_author">Ayeni Dolapo (Nigeria)</p>
+        </div>
+        <div class="testicon" v-if="testCounter == 4">
+          <div class="testimonial_talk">
+            <p>
+              Daniel gives the best content to make your business soar. He
+              brings your imaginations into reality that gives you the right
+              audience and engagement that your business needs. I recommend
+              Daniel Aikhomogbe, the tech genius
+            </p>
+          </div>
+          <p class="testimonial_author">Jennifer Ogedegbe (Nigeria)</p>
+        </div>
+        <!-- Loop ends here -->
+        <div
+          class="button_right"
+          @click="
+            testCounter == 4
+              ? (testCounter = 0)
+              : (testCounter = testCounter + 1)
+          "
+        >
           <img src="../assets/right_circle.svg" alt="" srcset="" />
         </div>
       </div>
@@ -91,13 +160,13 @@
           position: absolute;
           content: url("../assets/quote_up.svg");
           left: 2.5%;
-          top: -15%;
+          top: -8%;
         }
         .testimonial_talk::after {
           position: absolute;
           content: url("../assets/quote_down.svg");
           right: 2.5%;
-          bottom: -15%;
+          bottom: -8%;
         }
         .testimonial_author {
           border: 1px solid #fff;

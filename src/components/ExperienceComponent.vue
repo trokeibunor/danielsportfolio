@@ -4,22 +4,48 @@
       <div class="leftSide">
         <div class="lscontent">
           <div>
-            <h3>My Work Experience</h3>
+            <h3>My Career Highlights</h3>
             <p>Hi there, here is a Sneak Peek into my work experience.</p>
           </div>
           <img src="../assets/experience_img.png" alt="" />
+          <div class="experienceBox">
+            <p class="ebTitle">Wesly University</p>
+            <p class="ebRole">B.sc Mass Communication</p>
+          </div>
+          <div class="experienceBox">
+            <p class="ebTitle">Nexford University</p>
+            <p class="ebRole">360 Marketing</p>
+          </div>
+          <div class="experienceBox">
+            <p class="ebTitle">Tekeda Institute</p>
+            <p class="ebRole">MBA(Business Administration Management)</p>
+          </div>
+          <div class="experienceBox">
+            <p class="ebTitle">
+              Chartered Institute of social media & Digital Marketing
+            </p>
+            <p class="ebRole">PGD Digital Marketing</p>
+          </div>
+          <div class="experienceBox">
+            <p class="ebTitle">Alison</p>
+            <p class="ebRole">Diploma in Social media Strategy</p>
+          </div>
+          <div class="experienceBox">
+            <p class="ebTitle">eMarketing Institute</p>
+            <p class="ebRole">Social media marketing</p>
+          </div>
         </div>
       </div>
       <div class="rightSide">
         <div class="experienceBox">
-          <p class="ebTitle">GRILLADO (CANADA)</p>
+          <p class="ebTitle">GRILLADO (Canada)</p>
           <p class="ebRole">
             I managed their social media pages, created social media copies and
             caption.
           </p>
         </div>
         <div class="experienceBox">
-          <p class="ebTitle">GOTHRIDER (CANADA)</p>
+          <p class="ebTitle">GOTHRIDER (Canada)</p>
           <p class="ebRole">
             Created great social media copies that resonates well to the brand
             and also weaved out captions that resulted into CTA.
@@ -33,42 +59,42 @@
           </p>
         </div>
         <div class="experienceBox">
-          <p class="ebTitle">HOSKI MEDIA(CANADA)</p>
+          <p class="ebTitle">HOSKI MEDIA(Canada)</p>
           <p class="ebRole">
             Created content for her website and also worked with few of her
             client.
           </p>
         </div>
         <div class="experienceBox">
-          <p class="ebTitle">SOUNDS GOOD(CANADA)</p>
+          <p class="ebTitle">SOUNDS GOOD(Canada)</p>
           <p class="ebRole">
             Generated more than 1,000 influencers monthly for UGC Campaigns.
             They were both paid/Product based influencers.
           </p>
         </div>
         <div class="experienceBox">
-          <p class="ebTitle">SM MARKETING(SOUTH AFRICA)</p>
+          <p class="ebTitle">SM MARKETING(South Africa)</p>
           <p class="ebRole">
             I managed/Grew a client page on Instagram & Facebook from 0
             followers -18,000 followers within the space of a year.
           </p>
         </div>
         <div class="experienceBox">
-          <p class="ebTitle">SCARIPAY(MADAGASCAR)</p>
+          <p class="ebTitle">SCARIPAY(Madagascar)</p>
           <p class="ebRole">
             I Created an easy-Flow UX copy for their mobile Application and
             website. I also managed their social pages.
           </p>
         </div>
         <div class="experienceBox">
-          <p class="ebTitle">OPERA(NIGERIA)</p>
+          <p class="ebTitle">OPERA(Nigeria)</p>
           <p class="ebRole">
             Managed close to 200 businesses and I also monitored their ads
             campaigns on opera’s platform (Opera Mini)
           </p>
         </div>
         <div class="experienceBox">
-          <p class="ebTitle">SAGE MEDIA TECH(NIGERIA)</p>
+          <p class="ebTitle">SAGE MEDIA TECH(Nigeria)</p>
           <p class="ebRole">
             I created an advert script that was aired on CNNAFRICA and I also
             weaved out content for billboards, social banners, Facebook copies
@@ -76,7 +102,7 @@
           </p>
         </div>
         <div class="experienceBox">
-          <p class="ebTitle">AK MEDIA CONCEPTS(NIGERIA)</p>
+          <p class="ebTitle">AK MEDIA CONCEPTS(Nigeria)</p>
           <p class="ebRole">
             Managed their social media pages and also created successful
             Facebook ads campaigns.
@@ -110,6 +136,17 @@
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
+        .experienceBox {
+          margin: 1rem 0px;
+          width: 80%;
+          p {
+            margin: 2px;
+          }
+          .ebTitle {
+            font-size: 24px;
+            font-weight: 600;
+          }
+        }
         img {
           width: 70%;
         }

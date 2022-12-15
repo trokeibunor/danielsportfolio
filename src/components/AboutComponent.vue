@@ -27,7 +27,12 @@
           more. My mission is to develop and execute creative-digital ways for
           brands.
         </p>
-        <button><img src="../assets/Download.svg" alt="" /> Talk to Me</button>
+        <a
+          href="https://docs.google.com/document/d/1-MxrhCUTsskS4zN7hgKmcB7y3RdzkLsn/edit?usp=share_link&ouid=105286617648966534690&rtpof=true&sd=true"
+          target="_blank"
+        >
+          <img src="../assets/Download.svg" alt="" /> See some writings
+        </a>
       </div>
     </div>
     <div class="framer">
@@ -64,10 +69,12 @@ section.about {
       height: 100%;
     }
     .text-section {
-      button {
+      a {
         background-color: rgba(0, 0, 0, 0);
         border: 2px solid #00adb5;
         border-radius: 10px;
+        width: fit-content;
+        text-decoration: none;
         display: flex;
         align-items: center;
         padding: 8px 10px;
@@ -78,7 +85,7 @@ section.about {
         }
         cursor: pointer;
       }
-      button:hover {
+      a:hover {
         background-color: #fff;
         border: 2px solid #fff;
         color: #00adb5;

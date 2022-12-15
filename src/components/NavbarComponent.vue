@@ -39,9 +39,7 @@ const dropDown = ref(false);
       <!-- Mobile Menu -->
       <div class="mobile-drop" v-if="dropDown">
         <a href="/#top" @click="dropDown = false" class="mobile-nav">Home</a>
-        <a href="/#abouts" @click="dropDown = false" class="mobile-nav"
-          >About</a
-        >
+        <a href="/#about" @click="dropDown = false" class="mobile-nav">About</a>
         <a href="/#work" @click="dropDown = false" class="mobile-nav">Works</a>
         <a href="/#contact" @click="dropDown = false" class="mobile-nav"
           >Contact</a

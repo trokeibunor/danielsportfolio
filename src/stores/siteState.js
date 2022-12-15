@@ -18,6 +18,7 @@ export const useSiteState = defineStore({
   state: () => ({
     testimonials: [],
     works: [],
+    messages: [],
   }),
   actions: {
     async getTesimonials() {

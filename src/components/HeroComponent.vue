@@ -5,15 +5,12 @@
       <div class="left-side">
         <div class="text_section">
           <div class="hello_badge">&#128075; Hello, I'm</div>
-          <h1>Daniel <br />Your next digital media manager</h1>
-          <p>
-            Daniel is a creative with over 6 years experience with a proven
-            track record of creating contents to drive growth.
-          </p>
+          <h1>Daniel</h1>
+          <p>Your next digital media manager</p>
           <!-- view contact -->
-          <button>
-            <img src="../assets/Download.svg" alt="" /> Get to Know Me
-          </button>
+          <a href="/#about">
+            <img src="../assets/DownloadHero.svg" alt="" /> Get to Know Me
+          </a>
         </div>
       </div>
       <div class="right-side"><img src="../assets/hero_img.png" alt="" /></div>
@@ -52,23 +49,26 @@
           line-height: 100%;
         }
         p {
-          width: 60%;
+          width: 100%;
         }
-        button {
+        a {
           background-color: rgba(0, 0, 0, 0);
+          text-decoration: none;
           border: 2px solid #00adb5;
+          width: fit-content;
           border-radius: 10px;
           display: flex;
           align-items: center;
           padding: 8px 10px;
           color: #00adb5;
           font-weight: 600;
+          margin: 1rem 0px;
           img {
             margin-right: 8px;
           }
           cursor: pointer;
         }
-        button:hover {
+        a:hover {
           background-color: #fff;
           border: 2px solid #fff;
           color: #00adb5;
@@ -90,10 +90,19 @@
       display: flex;
       flex-direction: column-reverse;
       .left-side {
+        text-align: center;
         .text_section {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
           margin-top: 1rem;
+          h1 {
+            margin: 0.5rem;
+          }
           p {
             width: 100%;
+            margin: 0px;
           }
         }
         button {
