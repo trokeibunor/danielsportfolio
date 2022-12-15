@@ -214,6 +214,15 @@ function sendMail(e) {
                 }
               }
             }
+            .social_links {
+              a {
+                margin: 0px 4px;
+                img {
+                  width: 24px;
+                  height: 24px;
+                }
+              }
+            }
           }
         }
         .form-content {

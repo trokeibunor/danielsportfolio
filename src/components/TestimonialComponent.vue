@@ -131,6 +131,13 @@ const testCounter = ref(0);
         display: flex;
         flex-direction: column;
         flex-direction: center;
+        a {
+          margin: 4px 0px;
+          img {
+            width: 24px;
+            height: 24px;
+          }
+        }
       }
     }
     .testimonials_row {
