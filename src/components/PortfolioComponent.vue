@@ -17,11 +17,18 @@
         >
           UI Writing
         </p>
+        <p
+          class="categoryBox"
+          @click="showing = 'blogpost'"
+          :class="{ active: showing == 'blogpost' }"
+        >
+          Blog Posts
+        </p>
       </div>
       <div class="worksHolder">
         <div class="workGrid">
-          <div class="workBox" v-for="item in siteState.works" :key="item.name">
-            <template v-if="showing == item.category">
+          <template v-for="item in siteState.works" :key="item.name">
+            <div class="workBox" v-if="showing == item.category">
               <img :src="item.ImgLink" alt="" />
               <div class="wbContent">
                 <p class="title">{{ item.Name }}</p>
@@ -33,8 +40,8 @@
                   <img src="../assets/right_arrow.svg" alt="" />
                 </a>
               </div>
-            </template>
-          </div>
+            </div>
+          </template>
         </div>
       </div>
     </div>

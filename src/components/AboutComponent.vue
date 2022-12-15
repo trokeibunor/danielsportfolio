@@ -28,7 +28,7 @@
           brands.
         </p>
         <a
-          href="https://docs.google.com/document/d/1-MxrhCUTsskS4zN7hgKmcB7y3RdzkLsn/edit?usp=share_link&ouid=105286617648966534690&rtpof=true&sd=true"
+          href="https://drive.google.com/file/d/1gHVBqGvEq63bE1tv66GRkUGhvCsjtahy/view?usp=share_link"
           target="_blank"
         >
           <img src="../assets/Download.svg" alt="" /> See some writings

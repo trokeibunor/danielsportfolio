@@ -25,6 +25,7 @@
         </option>
         <option value="smManagement">Social Media Management</option>
         <option value="uiwriting">UI writing</option>
+        <option value="blogpost">Blog Posts</option>
       </select>
       <input
         type="file"
