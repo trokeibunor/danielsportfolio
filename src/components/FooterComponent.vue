@@ -4,9 +4,9 @@
       <div class="tfCon">
         <p class="logo">DANIEL A.</p>
         <div class="nav-menu">
-          <a href="#">Works</a>
-          <a href="#">Contact</a>
-          <a href="#">About Daniel</a>
+          <a href="/#work">Works</a>
+          <a href="/#contact">Contact</a>
+          <a href="/#about">About Daniel</a>
         </div>
       </div>
     </div>

@@ -8,10 +8,10 @@ import {
   getDocs,
   collection,
   serverTimestamp,
-  // addDoc,
+  addDoc,
 } from "firebase/firestore";
 import { getStorage, ref, uploadBytes, getDownloadURL } from "firebase/storage";
-// import emailjs from "emailjs-com";
+import emailjs from "emailjs-com";
 
 export const useSiteState = defineStore({
   id: "site-state",
@@ -19,6 +19,11 @@ export const useSiteState = defineStore({
     testimonials: [],
     works: [],
     messages: [],
+    mailData: {
+      service_ID: "service_1x2oa49",
+      template_ID: "template_b3wiotr",
+      userID: "GVwnRMbrkBrh1l_Kd",
+    },
   }),
   actions: {
     async getTesimonials() {
@@ -84,6 +89,61 @@ export const useSiteState = defineStore({
           this.emailNotSent = true;
         }
       }
+    },
+    async sendMail(name, subject, message, email, location, target) {
+      this.isProcessing = true;
+      if (subject != "" && message != "" && email != "") {
+        try {
+          // Send to mail
+          emailjs.sendForm(
+            this.mailData.service_ID,
+            this.mailData.template_ID,
+            target,
+            this.mailData.userID,
+            {
+              from_name: name,
+              subject: subject,
+              message: message,
+              reply_to: email,
+              sender_location: location,
+              to_name: "Daniel",
+            }
+          );
+          // save to database
+          await addDoc(collection(db, "Messages"), {
+            from_name: name,
+            subject: subject,
+            message: message,
+            reply_to: email,
+            sentAt: serverTimestamp(),
+          });
+          const toast = useToast();
+          toast.success("Email sent successfully");
+          this.emailSent = true;
+          // save to database
+        } catch (error) {
+          this.isProcessing = false;
+          // this.emailNotSent = true;
+          const toast = useToast();
+          toast.error("email not sent please try again");
+          console.log(error);
+        }
+      } else {
+        this.isProcessing = false;
+        this.emptyForm = true;
+      }
+    },
+    // get works
+    async getWorks() {
+      const querySnapshot = await getDocs(collection(db, "works"));
+      this.works = [];
+      querySnapshot.forEach((doc) => {
+        const dataObject = doc.data();
+        // Actions can mutate state in pinia
+        // mutate projects
+        this.works.push({ ...dataObject });
+        console.log(this.works);
+      });
     },
   },
 });

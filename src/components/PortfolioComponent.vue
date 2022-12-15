@@ -3,88 +3,37 @@
     <div class="portfolioContent">
       <h3 class="header">Portfolio</h3>
       <div class="portfolioTogglerow">
-        <p class="categoryBox">Social Media Management</p>
-        <p class="categoryBox">UI Writing</p>
+        <p
+          class="categoryBox"
+          @click="showing = 'smManagement'"
+          :class="{ active: showing == 'smManagement' }"
+        >
+          Social Media Management
+        </p>
+        <p
+          class="categoryBox"
+          @click="showing = 'uiwriting'"
+          :class="{ active: showing == 'uiwriting' }"
+        >
+          UI Writing
+        </p>
       </div>
       <div class="worksHolder">
         <div class="workGrid">
-          <div class="workBox">
-            <img src="https://picsum.photos/200/300" alt="" />
-            <div class="wbContent">
-              <p class="title">Real Estate</p>
-              <p class="content">
-                Vivamus eleifend convallis ante, non pharetra libero molestie...
-              </p>
-              <a href="#" class="viewLink">
-                View Live Work
-                <img src="../assets/right_arrow.svg" alt="" />
-              </a>
-            </div>
-          </div>
-          <div class="workBox">
-            <img src="https://picsum.photos/200/300" alt="" />
-            <div class="wbContent">
-              <p class="title">Real Estate</p>
-              <p class="content">
-                Vivamus eleifend convallis ante, non pharetra libero molestie...
-              </p>
-              <a href="#" class="viewLink">
-                View Live Work
-                <img src="../assets/right_arrow.svg" alt="" />
-              </a>
-            </div>
-          </div>
-          <div class="workBox">
-            <img src="https://picsum.photos/200/300" alt="" />
-            <div class="wbContent">
-              <p class="title">Real Estate</p>
-              <p class="content">
-                Vivamus eleifend convallis ante, non pharetra libero molestie...
-              </p>
-              <a href="#" class="viewLink">
-                View Live Work
-                <img src="../assets/right_arrow.svg" alt="" />
-              </a>
-            </div>
-          </div>
-          <div class="workBox">
-            <img src="https://picsum.photos/200/300" alt="" />
-            <div class="wbContent">
-              <p class="title">Real Estate</p>
-              <p class="content">
-                Vivamus eleifend convallis ante, non pharetra libero molestie...
-              </p>
-              <a href="#" class="viewLink">
-                View Live Work
-                <img src="../assets/right_arrow.svg" alt="" />
-              </a>
-            </div>
-          </div>
-          <div class="workBox">
-            <img src="https://picsum.photos/200/300" alt="" />
-            <div class="wbContent">
-              <p class="title">Real Estate</p>
-              <p class="content">
-                Vivamus eleifend convallis ante, non pharetra libero molestie...
-              </p>
-              <a href="#" class="viewLink">
-                View Live Work
-                <img src="../assets/right_arrow.svg" alt="" />
-              </a>
-            </div>
-          </div>
-          <div class="workBox">
-            <img src="https://picsum.photos/200/300" alt="" />
-            <div class="wbContent">
-              <p class="title">Real Estate</p>
-              <p class="content">
-                Vivamus eleifend convallis ante, non pharetra libero molestie...
-              </p>
-              <a href="#" class="viewLink">
-                View Live Work
-                <img src="../assets/right_arrow.svg" alt="" />
-              </a>
-            </div>
+          <div class="workBox" v-for="item in siteState.works" :key="item.name">
+            <template v-if="showing == item.category">
+              <img :src="item.ImgLink" alt="" />
+              <div class="wbContent">
+                <p class="title">{{ item.Name }}</p>
+                <p class="content">
+                  {{ item.shortDesc }}
+                </p>
+                <a :href="item.Link" class="viewLink">
+                  View Live Work
+                  <img src="../assets/right_arrow.svg" alt="" />
+                </a>
+              </div>
+            </template>
           </div>
         </div>
       </div>
@@ -92,7 +41,16 @@
   </section>
 </template>
 
-<script setup></script>
+<script setup>
+import { onMounted, ref } from "vue";
+import { useSiteState } from "@/stores/siteState";
+const siteState = useSiteState();
+onMounted(() => {
+  // siteState.getTestimonials();
+  siteState.getWorks();
+});
+const showing = ref("smManagement");
+</script>
 
 <style lang="scss" scoped>
 .portfolio {
@@ -117,6 +75,10 @@
         border-radius: 0px;
         margin: 0px 8px;
       }
+      .active {
+        background-color: #fff;
+        color: #333333;
+      }
       .categoryBox:hover {
         background-color: #fff;
         color: #333333;
@@ -135,13 +97,14 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         column-gap: 5%;
-        row-gap: 2.5rem;
+        align-items: center;
         .workBox {
+          margin: 1rem 0px;
           img {
             width: 100%;
             height: 11rem;
             object-fit: cover;
-            margin: 0;
+
             padding: 0;
             border-radius: 8px 8px 0 0;
           }

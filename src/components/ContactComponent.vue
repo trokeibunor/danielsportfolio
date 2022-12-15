@@ -45,22 +45,44 @@
             </div>
           </div>
           <div class="form-content">
-            <form action="#" id="emailForm">
-              <input type="text" name="" id="" required placeholder="Name*" />
-              <input type="email" name="" id="" required placeholder="Email*" />
-              <input type="text" name="" id="" placeholder="Location" />
+            <form @submit.prevent="sendMail">
               <input
                 type="text"
-                name=""
+                name="from_name"
+                id=""
+                required
+                placeholder="Name*"
+                v-model="contactForm.name"
+              />
+              <input
+                type="email"
+                name="reply_to"
+                id=""
+                required
+                placeholder="Email*"
+                v-model="contactForm.email"
+              />
+              <input
+                type="text"
+                name="sender_location"
+                id=""
+                placeholder="Location"
+                v-model="contactForm.location"
+              />
+              <input
+                type="text"
+                name="subject"
                 id=""
                 required
                 placeholder="Subject*"
+                v-model="contactForm.subject"
               />
               <textarea
-                name=""
+                name="message"
                 id=""
                 required
                 placeholder="Message*"
+                v-model="contactForm.message"
               ></textarea>
               <button type="submit">
                 Submit <img src="../assets/submit_icon.svg" alt="" />
@@ -73,7 +95,33 @@
   </section>
 </template>
 
-<script setup></script>
+<script setup>
+import { useSiteState } from "@/stores/siteState";
+import { reactive } from "vue";
+const contactForm = reactive({
+  subject: "",
+  email: "",
+  message: "",
+  name: "",
+  location: "",
+});
+const siteState = useSiteState();
+function sendMail(e) {
+  siteState.sendMail(
+    contactForm.subject,
+    contactForm.email,
+    contactForm.message,
+    contactForm.location,
+    contactForm.name,
+    e.target
+  );
+  contactForm.subject = "";
+  contactForm.email = "";
+  contactForm.message = "";
+  contactForm.name = "";
+  contactForm.location = "";
+}
+</script>
 
 <style lang="scss" scoped>
 .contact {
